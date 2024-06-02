@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login History</title>
+  </head>
+  <body>
+    <h1>Login History</h1>
+    <table>
+      <tr>
+        <th>Date</th>
+        <th>User Agent</th>
+      </tr>
+      <% history.forEach(entry => { %>
+        <tr>
+          <td><%= entry.dateTime %></td>
+          <td><%= entry.userAgent %></td>
+        </tr>
+      <% }); %>
+    </table>
+    <p><a href="/">Home</a> | <a href="/logout">Logout</a></p>
+  </body>
+</html>
